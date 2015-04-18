@@ -82,7 +82,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-TARGET_QCOM_MEDIA_VARIANT := caf-new
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -113,20 +112,6 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/xiaomi/HM2014811
-
-BOARD_SEPOLICY_UNION += \
-    file.te \
-    device.te \
-    app.te \
-    cne.te \
-    qmux.te \
-    mpdecision.te \
-    thermald.te \
-    ueventd.te \
-    vold.te \
-    file_contexts \
-    genfs_contexts \
-    te_macros
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
